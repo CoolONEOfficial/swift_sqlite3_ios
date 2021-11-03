@@ -18,7 +18,7 @@ struct MainScreen: View {
                         ForEach(vm.topics, id: \.self) { name in
                             Button(name) {
                                 vm.toggleTopic(name)
-                            }.padding()
+                            }.padding().background(vm.selectedTopics.contains(name) ? Color.gray : Color.clear)
                         }
                     }
                 }.frame(height: 30)
@@ -44,6 +44,11 @@ struct MainScreen: View {
                                 Text(data["diff"]!)
                                 Spacer()
                                 Text(data["second_text"]!).frame(maxWidth: .infinity)
+                                
+                            case .empties:
+                                Text(data["id"]!).frame(maxWidth: .infinity)
+                                Spacer()
+                                Text(data["email"]!)
                             }
                         }.padding()
                         
