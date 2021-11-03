@@ -37,6 +37,13 @@ struct MainScreen: View {
                                 Text(data["user_name"]!)
                                 Spacer()
                                 Text(data["GROUP_CONCAT(topic_title)"]!)
+                                
+                            case .diffs:
+                                Text(data["first_text"]!).frame(maxWidth: .infinity)
+                                Spacer()
+                                Text(data["diff"]!)
+                                Spacer()
+                                Text(data["second_text"]!).frame(maxWidth: .infinity)
                             }
                         }.padding()
                         
