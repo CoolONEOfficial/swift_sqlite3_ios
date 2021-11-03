@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            ForEach(MainScreenModel.State.allCases, id: \.rawValue) { state in
+                MainScreen(vm: .init(state)).tabItem { Text(state.rawValue) }
+            }
+        }
     }
 }
 

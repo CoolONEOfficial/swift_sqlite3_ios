@@ -11,6 +11,10 @@
 		8559AF472731E9DF00D6C657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8559AF462731E9DF00D6C657 /* ContentView.swift */; };
 		8559AF492731E9E100D6C657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8559AF482731E9E100D6C657 /* Assets.xcassets */; };
 		8559AF4C2731E9E100D6C657 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8559AF4B2731E9E100D6C657 /* Preview Assets.xcassets */; };
+		8559AF532731EA4B00D6C657 /* db.db in Resources */ = {isa = PBXBuildFile; fileRef = 8559AF522731EA4B00D6C657 /* db.db */; };
+		8559AF552731EA6400D6C657 /* DbServiceSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8559AF542731EA6400D6C657 /* DbServiceSingleton.swift */; };
+		8559AF572731EB5600D6C657 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8559AF562731EB5600D6C657 /* MainScreenModel.swift */; };
+		8559AF592731EB5F00D6C657 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8559AF582731EB5F00D6C657 /* MainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		8559AF462731E9DF00D6C657 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8559AF482731E9E100D6C657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8559AF4B2731E9E100D6C657 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8559AF522731EA4B00D6C657 /* db.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.db; sourceTree = "<group>"; };
+		8559AF542731EA6400D6C657 /* DbServiceSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbServiceSingleton.swift; sourceTree = "<group>"; };
+		8559AF562731EB5600D6C657 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
+		8559AF582731EB5F00D6C657 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +62,11 @@
 				8559AF442731E9DF00D6C657 /* sqliteApp.swift */,
 				8559AF462731E9DF00D6C657 /* ContentView.swift */,
 				8559AF482731E9E100D6C657 /* Assets.xcassets */,
+				8559AF522731EA4B00D6C657 /* db.db */,
 				8559AF4A2731E9E100D6C657 /* Preview Content */,
+				8559AF542731EA6400D6C657 /* DbServiceSingleton.swift */,
+				8559AF562731EB5600D6C657 /* MainScreenModel.swift */,
+				8559AF582731EB5F00D6C657 /* MainScreen.swift */,
 			);
 			path = sqlite;
 			sourceTree = "<group>";
@@ -125,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8559AF532731EA4B00D6C657 /* db.db in Resources */,
 				8559AF4C2731E9E100D6C657 /* Preview Assets.xcassets in Resources */,
 				8559AF492731E9E100D6C657 /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8559AF472731E9DF00D6C657 /* ContentView.swift in Sources */,
+				8559AF552731EA6400D6C657 /* DbServiceSingleton.swift in Sources */,
+				8559AF592731EB5F00D6C657 /* MainScreen.swift in Sources */,
+				8559AF572731EB5600D6C657 /* MainScreenModel.swift in Sources */,
 				8559AF452731E9DF00D6C657 /* sqliteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
